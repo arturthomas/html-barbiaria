@@ -1,0 +1,237 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    background-color: #CCCCCC;
+    padding: 20px 0; 
+    /* padding é o espaçamento interno, no caso 20px para cima e para baixo e 0 para esqueda e direita */
+}
+.caixa{
+    /* A div estara posicionada de forma relativa */
+    position: relative;
+    /* com uma largura de 940px */
+    width: 940px;
+    /* com uma margin automática */
+    margin: 0 auto; /* margin é o espaçamento externo. 0 se refere para cima e para baixo e para direita e para esquerda seja automático */
+}
+/* o posicionamento da tag nav vai está absoluta de qualquer lugar da tela
+para que ela tem um posicionamento a partir de uma caixa deve-se criar um posicionamento relativo nesta dive para que ela possa se referenciar... conforme feito a cima */
+nav{
+    /* posicionamento absoluto, ou seja o item pode ser movimentado */
+    position: absolute; 
+    /* posicionamneto estara a 110px de altura na tela */
+    top: 110px;
+    /* alinhado a direita */
+    right: 0;
+}
+nav li{
+    display: inline;
+    margin: 0 0 0 15px ;/*espaçamento externo, primeiro valor é referente ao topo, 2º direita, 3º baixo, 4º esquerda  */
+}
+nav a{
+    text-transform: uppercase;/* troca a letra de minusculo para maiusculo */
+    color: black;
+    font-weight: bold;/* peso da fonte, ex: negrito */
+    font-size: 22px;    /* tamanho da fonte */
+    text-decoration: none;  /*remove decoração padrão */
+}
+nav a:hover{/*------ação que será feita quando passar o mouse por cima-------*/
+    color: #C78C19;/* troca a cor */
+    text-decoration: underline;/* deixa sublinhado */
+}
+.produtos{
+    /* esse campo é o responsável por alinha todo ul centralizado */
+    width: 940px; /* tendo 940px de largura */
+    margin: 0 auto;/* margin de 0 pix para cima e para baixo e automático para esquerda e direita */
+    padding: 50px 0;/* espaçamento interno de 50pix para cima e para baixo e 0 para os lados */
+}
+.produtos li{
+    display: inline-block;   /* deixa tamanho do seu conteúdo, mas regulável */
+    text-align: center;
+    width: 30%;
+    vertical-align: top; /*inverte o alinhamento */
+    margin: 0 1.5%;/* margin é o espalamento externo, neste caso 0% para cima e para baixo e 1.5% para esqueda e direita */
+    padding: 30px 20px;/* espaçamento interno de 30px para cima e para baixo e 20px para esqueda e direita*/
+    box-sizing: border-box;/* faz com que o navegador intenda que os 30% do width(largura) sejam definitivos, com isso o padding de 30px 20px seja avalidado com base nesses 30% de largura */
+
+    /* ---------configurações do estilo da borda--------------- */
+    border: 2px solid black;/* largura da borda de 2px *//* estilo da borda é solido *//* arredondamento da borda */
+    border-radius: 15px;
+}
+.produtos li:hover{
+    border-color: #C78C19;
+}
+.produtos li:active{
+    border-color: rgb(118, 158, 8);
+}
+.produtos li:hover h2{
+    font-size: 35px;
+}
+.produtos h2{
+    font-size: 30px;/* tamanho da fonnte */
+    font-weight: bold;/* peso da fonte em negrito */
+}
+.produto-descricao{
+    font-size: 18px;
+}
+.produto-preco{
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px 0 0;
+/* espacamento externo de 10pix para cima e 0 para os lados e 0 para baixo */
+}
+
+footer{
+    text-align: center;
+    background: url("imagens/bg.jpg");
+    padding: 40px 0;
+}
+.copyright{
+    color: white;
+    font-size: 13px;
+    margin: 20px 0 0;
+}
+main{
+    width: 940px;   /* largura */
+    margin: 0 auto; 
+}
+form{
+    margin: 40px 0 ; /*margin suberior e inferio de 40px para os lados 0px. É ISSO QUE VARÁ OS ESPAÇAMENTO ENTRE O CABEÇALHO E O RODA PEÉ  */
+}
+form label, legend{
+    cursor: pointer;
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;/* margim para baixo de 10px. PARA QUE O TEXTO NÃO FIQUE MUITO COLADO NA CAIXA DO INPUT */
+}
+select{
+    width: 10%;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 7px 0;
+    border: none;
+    border-radius: 5px;
+    background: #C78C19;
+    cursor: pointer;
+    transition: 0.5s;
+}
+select:hover{
+    background: rgb(71, 50, 3);
+}
+.input-padrao{
+    cursor: pointer;
+    display: block;
+    margin: 0 0 20px; /* margin externa de 0 0 20px para baixo */
+    padding: 10px 25px; /* magim interna de 10px para cima e para baixo e 25px para os lados */
+    width: 50%;    /* largura de 50% da pagina */
+}
+.checkbox{
+    margin: 20px 0;
+    cursor: pointer;
+}
+.enviar{
+    width: 40%;
+    padding: 15px 0px;
+    background: #C78C19;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;/* Remove a borda padrão do navegador */
+    border-radius: 5px; /* bordas arredondadas */
+    transition: 0.5s;
+}
+.enviar:hover{
+    background: rgb(71, 50, 3);
+    cursor: pointer;
+}
+table{
+    margin: 20px 0px 40px;
+}
+thead{
+    background: #888888;
+    color: white;
+    font-weight: bold;
+}
+td, th{
+    padding: 8px 15px;
+    border: 1px black solid;
+}
+
+/* CSS da pagina index */
+
+.banner{
+    width: 100%;
+}
+.principal{
+    padding: 3em 0;    
+    width: 940px;   /* largura */
+    margin: 0 auto; 
+}
+.principal p{
+    margin: 0 0 1em;
+}
+.principal strong{
+    font-weight: bold;
+}
+.principal em{
+    font-style: italic;/* estilo da fonte */
+}
+
+.titulo-principal{
+    text-align: center;
+    font-size: 2em;/* a em é a medida do tamanho padrão da fonte no caso se a fonte tiver 15px por padrão se colocar 2em a fonte tera 30px  */
+    margin: 0 0 1em;/* magrin de 1em no caso o tamanho do tipo */
+    clear: left; 
+    /* limpar a formatação a esquerda que está sendo afetada pelo float criado da class imgutensiolios */
+}
+
+.beneficios{
+    padding:  3em 0;
+    
+    background: linear-gradient(#FFFFFF, #888888);
+}
+
+.mapa{
+    padding:  3em 0;
+    width: 940px;   /* largura */
+    margin: 0 auto; 
+}
+.mapa p{
+    text-align: center;
+    margin: 0 0 1em;
+}
+.conteudo-beneficio{
+    width: 640px;
+    margin: 0 auto;
+}
+
+.lista-beneficio{
+    width: 40%;
+    display: inline-block;/* o inline-block interpreta tudo que colocarmos no HTML inclusive os espaços em branco */
+    vertical-align: top;
+}
+.itens{
+    line-height: 1.5;/* autura da linha */
+}
+
+.itens:first-child{/* pseudoelemento*/
+    font-weight: bold;
+}
+.video{
+    width: 560px;
+    margin: 2em auto;
+}
+
+.imagem-beneficios{
+    width: 60%;
+}
+.imgutensiolios{
+    width: 120px;
+    float: left;/* float deixa a imagem flutuante a esquerda. OBS: isso afeta todo o conteúdo a baixo da imagem, por isso deve ser usar o clear: left na tag titulo-principal */
+    margin: 0 20px 20px 0;/* 0px para cima, 20px para direita 20px para esquerda 0px para baixo */
+
+}

@@ -1,0 +1,77 @@
+.header-top{
+	background-color: #CCCCCC;
+    /* A div estara posicionada de forma relativa */
+    position: relative;
+    /* com uma largura de 940px */
+    /* width: 940px; */
+    /* com uma margin automática */
+    margin: 0 auto; /* margin é o espaçamento externo. 0 se refere para cima e para baixo e para direita e para esquerda seja automático */
+}
+.header-top h1{
+	text-decoration: none;
+	font-size: 40px;
+	border: #FF0000 solid;
+	width: 260px;
+	margin-left: 200px;
+    color: black;
+}
+nav{
+    /* posicionamento absoluto, ou seja o item pode ser movimentado */
+    position: absolute; 
+    /* posicionamneto estara a 110px de altura na tela */
+    top: 13px;
+    /* alinhado a direita */
+    right: 250px;
+}
+.header-top li{
+	display: inline-block;
+}
+nav a{
+	text-decoration: none; 
+	padding: 30px 20px;
+	text-transform: uppercase;/* troca a letra de minusculo para maiusculo */
+    color: black;
+    font-weight: bold;/* peso da fonte, ex: negrito */
+    font-size: 22px; 
+}
+
+.principal{
+	background: #CCCCCC;
+	padding: 30px;
+}
+
+#banner {
+	width:100%;
+}
+
+.titulo-principal {
+	padding-left: 20px;
+}
+
+.titulo-centralizado {
+	text-align: center
+}
+
+p {
+	text-align: center;
+}
+
+#missao {
+	font-size: 20px
+}
+
+em strong {
+	color: #FF0000;
+}
+
+.itens {
+	font-style: italic
+}
+
+.beneficios {
+	background: #FFFFFF;
+	padding: 20px;
+}
+.imagembeneficios {
+	width: 50%;
+}
