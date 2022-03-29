@@ -125,6 +125,7 @@ select:hover{
     background: rgb(71, 50, 3);
 }
 .input-padrao{
+    text-align: left;
     cursor: pointer;
     display: block;
     margin: 0 0 20px; /* margin externa de 0 0 20px para baixo */
@@ -252,7 +253,6 @@ td, th{
 }
 /* DESNER PARA MOBILE */
 @media screen and (max-width: 480px){
-    /*  */
     .caixa, .principal, .mapa, .beneficios, .titulo-principal, .conteudo-beneficio, .video, .lista-beneficio, .produtos{
         width: auto;
     }
@@ -263,21 +263,19 @@ td, th{
         position: static;
     }
     .lista-beneficio, .imagem-beneficios {
-        width: 100%
+        width: 100%;
     }
     body{
         width: auto;
     }
 }
 @media screen and (max-width: 480px){
-    .produtos{
-    }
     .produtos li{
         width: 2px;
         display: block;
         width: auto;
         margin: 10px 25px 5px 25px;
-        border: 2px solid black;/
+        border: 2px solid black;
         padding: 1px, 1px;
         border-radius: 15px;
 
